@@ -7,6 +7,24 @@
 		return s1.indexOf(s2) > -1 || s2.indexOf(s1) > -1;
 	}
 	
+	function generate(data) {
+		// loop over data and generate html 
+		var markup = '';
+		for(var i = 0, l = data.length; i < l; i++){
+			markup += '<tr>\
+						<td>'+data[i].name+'</td>\
+						<td>'+data[i].designation+'</td>\
+						<td>'+data[i].age+'</td>\
+					</tr>';
+					
+		}
+		
+		// add html to dom
+		
+		$('#data').html(markup);
+		
+	}
+	
 	function search () {
 		// 1.select search inputs and get search values
 		var $employeeName, $designation, $age;
@@ -40,6 +58,22 @@
 			search();
 			return false;
 		});
+		var data = [
+			{
+				"name": "nikhil",
+				"designation": "Chairman",
+				"age": 26
+			}, {
+				"name": "jack",
+				"designation": "manager",
+				"age": 24
+			}, {
+				"name": "mike",
+				"designation": "Clerk",
+				"age": 30
+			}
+		];
+		generate(data);
 	});
 	
 })(jQuery);
