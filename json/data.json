@@ -1,0 +1,15 @@
+[
+	{
+		"name": "nikhil",
+		"designation": "Chairman",
+		"age": 22
+	}, {
+		"name": "jack",
+		"designation": "manager",
+		"age": 20
+	}, {
+		"name": "mike",
+		"designation": "supervisor",
+		"age": 18
+	}
+]

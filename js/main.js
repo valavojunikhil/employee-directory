@@ -58,22 +58,10 @@
 			search();
 			return false;
 		});
-		var data = [
-			{
-				"name": "nikhil",
-				"designation": "Chairman",
-				"age": 26
-			}, {
-				"name": "jack",
-				"designation": "manager",
-				"age": 24
-			}, {
-				"name": "mike",
-				"designation": "Clerk",
-				"age": 30
-			}
-		];
-		generate(data);
+		$.getJSON( "./json/data.json", function(data) {
+			generate(data);
+		});
+		
 	});
 	
 })(jQuery);
