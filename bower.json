@@ -1,0 +1,22 @@
+{
+  "name": "employee_directory",
+  "homepage": "https://github.com/valavojunikhil/employee-directory",
+  "authors": [
+    "nikhil"
+  ],
+  "description": "employee list",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  }
+}
